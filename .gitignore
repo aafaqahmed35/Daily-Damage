@@ -1,0 +1,16 @@
+# Node & Frontend
+node_modules/
+dist/
+dist-isolation/
+.DS_Store
+
+# Tauri & Rust
+src-tauri/target/
+src-tauri/gen/
+
+# Data & Environment
+*.log
+*.sqlite
+*.db
+.env
+.env.local
