@@ -1,0 +1,9 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "Minimal capabilities for Daily Damage companion shell",
+  "windows": ["main"],
+  "permissions": [
+    "core:default"
+  ]
+}

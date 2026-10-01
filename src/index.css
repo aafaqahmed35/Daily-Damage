@@ -1,0 +1,82 @@
+:root {
+  /* Color Palette — Restrained Dark Theme */
+  --bg-app: #0d0e11;
+  --bg-surface: #14161b;
+  --bg-surface-hover: #1a1d24;
+  --border-subtle: #232730;
+  --border-accent: #343946;
+
+  /* Typography Colors */
+  --text-primary: #f1f3f5;
+  --text-secondary: #8a909e;
+  --text-muted: #585e6c;
+
+  /* Brand Accents */
+  --accent-amber: #e5a93c;
+  --accent-amber-muted: #d48a2c;
+  --accent-amber-subtle: rgba(229, 169, 60, 0.12);
+
+  /* Functional Indicators */
+  --status-l1: #8a909e;
+  --status-l2: #4a90e2;
+  --status-l3: #e5a93c;
+  --status-l4: #e67e22;
+  --status-l5: #e74c3c;
+
+  /* Geometry & Spacing */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+
+  /* System Typography Stack */
+  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display",
+    "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "SF Mono", Menlo, Monaco, Consolas, monospace;
+}
+
+/* Reset & Global Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--bg-app);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  user-select: none;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Tabular Numerals for Timers & Metrics */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+}
+
+/* Reduced Motion Respect */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

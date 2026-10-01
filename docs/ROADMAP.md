@@ -41,11 +41,12 @@ gantt
   - Evaluate technical options and select **Tauri v2 + React + Vite + SQLite**.
   - Document decisions in `docs/` and set up clean repo foundation.
 
-- [ ] **P2 — Desktop Application Foundation**
+- [x] **P2 — Desktop Application Foundation** *(Completed)*
   - Initialize Tauri v2 + React (TypeScript) + Vite project structure.
   - Configure native macOS window bounds (`width: 320px`, `height: 700px`, frameless styling).
   - Implement core visual theme system (dark charcoal palette, typography, micro-spacing).
   - Verify local dev build running natively via Tauri.
+  - Verify production packaging producing standalone `Daily Damage.app` and `.dmg`.
 
 - [ ] **P3 — Local Data Model & SQLite Persistence Engine**
   - Integrate SQLite plugin (`tauri-plugin-sql`).

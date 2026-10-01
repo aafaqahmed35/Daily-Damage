@@ -36,10 +36,30 @@ Detailed documentation is available in the [`docs/`](file:///Users/mohammedaafaq
 
 ---
 
+## 🚀 Development & Build Workflow
+
+### Prerequisites
+- **Node.js**: `v24.x` or compatible
+- **Rust Toolchain**: `stable-aarch64-apple-darwin` (`rustc` & `cargo`)
+
+### Commands
+```bash
+# Install dependencies
+npm install
+
+# Run application in development mode (with Hot Module Replacement)
+npm run tauri dev
+
+# Compile production-ready standalone macOS application (.app & .dmg)
+npm run tauri build
+```
+
+---
+
 ## 🚀 Incremental Build Plan
 
-- [x] **P1 — Repository Audit, Requirements Freeze & Architecture** *(Current Phase)*
-- [ ] **P2 — Desktop Application Foundation (Tauri v2 + React Setup)**
+- [x] **P1 — Repository Audit, Requirements Freeze & Architecture**
+- [x] **P2 — Desktop Application Foundation (Tauri v2 + React Setup)** *(Completed)*
 - [ ] **P3 — Local Data Model & SQLite Persistence Engine**
 - [ ] **P4 — Compact Today UI & Core Container**
 - [ ] **P5 — Routine Trackers Implementation (Training, Namaz, Steps, Soya, Diet, Sleep, Free Time)**
